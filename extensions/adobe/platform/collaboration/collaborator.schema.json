@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/collaboration/collaborator",
+  "title": "Collaborator",
+  "type": "object",
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "additionalProperties": false,
+  "meta:extends": 
+  [
+    "https://ns.adobe.com/xdm/context/person"
+  ],
+  "description": "A collaborator on a resource",
+  "definitions": {
+    "collaborator": {
+      "properties": {
+        "@id": {
+          "type": "string",
+          "title": "ID",
+          "format": "uri",
+          "description":
+            "The unique identifier of the Collaborator"
+        },
+        "role": {
+          "title": "Collaborator Role",
+          "$ref": "#/definitions/role"
+        }
+      }
+    },
+    "role": {
+      "type": "string",
+      "enum": ["editor", "viewer"],
+      "meta:enum": {
+        "editor": "An editor has read and write access to the resource",
+        "viewer": "A viewer only has read-only access to the resource"
+      },
+      "description": "The role type of the collaborator"
+    }
+  },
+  "required": ["@id","role"],
+  "allOf": [
+    {
+      "$ref": "#/definitions/collaborator"
+    },
+    {
+      "$ref": "#/definitions/role"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/person#/definitions/person"
+    }
+  ]
+}
