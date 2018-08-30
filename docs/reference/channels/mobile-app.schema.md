@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/mobile-app
 
 Native mobile applications that are installed through an app store.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/mobile-app.schema.json](channels/mobile-app.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Native mobile applications that are installed through an app store.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Web (this schema) |
-| [@type](#@type) | `const` | Optional | Web (this schema) |
+| [@id](#id) | `const` | **Required** | Web (this schema) |
+| [@type](#type) | `const` | Optional | Web (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Web (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Web (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Web (this schema) |

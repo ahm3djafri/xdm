@@ -12,20 +12,23 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "additionalProperties": false,
-  "meta:extends": 
-  [
-    "https://ns.adobe.com/xdm/context/person"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/person"],
   "description": "A collaborator on a resource",
   "definitions": {
     "collaborator": {
       "properties": {
-        "@id": {
-          "type": "string",
-          "title": "ID",
-          "format": "uri",
-          "description":
-            "The unique identifier of the Collaborator"
+        "user": {
+          "oneOf": [
+            {
+              "$ref": "https://ns.adobe.com/adobecloudplatform/ims/user",
+              "title": "IMS User",
+              "description": "The unique identifier of the Collaborator"
+            },
+            {
+              "$ref" : "https://ns.adobe.com/xdm/context/emailaddress",
+              "title": "Collaborator Email"
+            }
+          ]
         },
         "role": {
           "title": "Collaborator Role",
@@ -43,7 +46,7 @@
       "description": "The role type of the collaborator"
     }
   },
-  "required": ["@id","role"],
+  "required": ["user", "role"],
   "allOf": [
     {
       "$ref": "#/definitions/collaborator"
@@ -53,6 +56,10 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/person#/definitions/person"
+    },
+    {
+      "$ref":
+        "https://ns.adobe.com/adobecloudplatform/ims/user#/definitions/user"
     }
   ]
 }

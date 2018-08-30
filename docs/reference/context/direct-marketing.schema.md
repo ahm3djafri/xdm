@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/direct-marketing
 
 The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/direct-marketing.schema.json](context/direct-marketing.schema.json) |
 ## Schema Hierarchy
 

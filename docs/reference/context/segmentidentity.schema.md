@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/segmentidentity
 
 SegmentIdentity is used to clearly distinguish segments from multiple sources. SegmentIdentity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/segmentidentity.schema.json](context/segmentidentity.schema.json) |
 ## Schema Hierarchy
 
@@ -30,7 +30,7 @@ SegmentIdentity is used to clearly distinguish segments from multiple sources. S
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Segment Identity (this schema) |
+| [@id](#id) | `string` | Optional | Segment Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Segment Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Segment Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

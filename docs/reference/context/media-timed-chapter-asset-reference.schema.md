@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference
 
 Asset information about the chapter captured by the experience event.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/media-timed-chapter-asset-reference.schema.json](context/media-timed-chapter-asset-reference.schema.json) |
 ## Schema Hierarchy
 
@@ -29,7 +29,7 @@ Asset information about the chapter captured by the experience event.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed Media Chapter Asset Reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

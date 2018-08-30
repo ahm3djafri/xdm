@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/phonenumber
 
 Information that allows the phone calling of a person. Typically an alphanumeric number, 1-222-333 4444 in North America, but can have a wide range of formats.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
 ## Schema Hierarchy
 
@@ -27,14 +27,14 @@ Information that allows the phone calling of a person. Typically an alphanumeric
 
 # Phone Number Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:extension](#xdmextension) | `string` | Optional | Phone Number (this schema) |
-| [xdm:number](#xdmnumber) | `string` | Optional | Phone Number (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Phone Number (this schema) |
-| [xdm:status](#xdmstatus) | `string` | Optional | Phone Number (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Phone Number (this schema) |
-| [xdm:validity](#xdmvalidity) | `string` | Optional | Phone Number (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:extension](#xdmextension) | `string` | Optional |  | Phone Number (this schema) |
+| [xdm:number](#xdmnumber) | `string` | Optional |  | Phone Number (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Phone Number (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Phone Number (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Phone Number (this schema) |
+| [xdm:validity](#xdmvalidity) | `string` | Optional |  | Phone Number (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:extension
@@ -112,6 +112,7 @@ An indication as to the ability to use the phone number.
 `xdm:status`
 * is optional
 * type: `string`
+* default: `"active"`
 * defined in this schema
 
 ### xdm:status Type

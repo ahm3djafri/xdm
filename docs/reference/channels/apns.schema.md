@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/apns
 
 Apple Push Notification Service
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/apns.schema.json](channels/apns.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Apple Push Notification Service
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | APNS (this schema) |
-| [@type](#@type) | `const` | Optional | APNS (this schema) |
+| [@id](#id) | `const` | **Required** | APNS (this schema) |
+| [@type](#type) | `const` | Optional | APNS (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | APNS (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | APNS (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | APNS (this schema) |

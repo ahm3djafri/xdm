@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/emailaddress
 
 A standard email address.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
 ## Schema Hierarchy
 
@@ -29,14 +29,14 @@ A standard email address.
 
 # Email Address Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:address](#xdmaddress) | `string` | Optional | Email Address (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional | Email Address (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Email Address (this schema) |
-| [xdm:status](#xdmstatus) | `string` | Optional | Email Address (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Email Address (this schema) |
-| [xdm:type](#xdmtype) | `string` | Optional | Email Address (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:address](#xdmaddress) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Email Address (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Email Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional |  | Email Address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:address
@@ -110,6 +110,7 @@ An indication as to the ability to use the email address.
 `xdm:status`
 * is optional
 * type: `string`
+* default: `"active"`
 * defined in this schema
 
 ### xdm:status Type

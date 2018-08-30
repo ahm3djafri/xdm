@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/advertising-timed-asset-reference
 
 Asset information about the ad captured by the experience event.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/advertising-timed-asset-reference.schema.json](context/advertising-timed-asset-reference.schema.json) |
 ## Schema Hierarchy
 
@@ -29,7 +29,7 @@ Asset information about the ad captured by the experience event.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Ad Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Ad Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Ad Asset Reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Ad Asset Reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

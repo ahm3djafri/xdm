@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/adm
 
 Amazon Device Messaging
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Amazon Device Messaging
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | ADM (this schema) |
-| [@type](#@type) | `const` | Optional | ADM (this schema) |
+| [@id](#id) | `const` | **Required** | ADM (this schema) |
+| [@type](#type) | `const` | Optional | ADM (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | ADM (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | ADM (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | ADM (this schema) |

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/auditable
 
 Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/auditable.schema.json](common/auditable.schema.json) |
 ## Schema Hierarchy
 
@@ -47,7 +47,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:createDate)
+* defined in [Common Properties](../external/repo/common.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -72,7 +72,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:lastModifiedDate`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:lastModifiedDate)
+* defined in [Common Properties](../external/repo/common.schema.md#repolastmodifieddate)
 
 ### repo:lastModifiedDate Type
 

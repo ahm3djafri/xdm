@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/phone
 
 The telephone. Includes both inbound and outbound.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ The telephone. Includes both inbound and outbound.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Phone (this schema) |
-| [@type](#@type) | `const` | Optional | Phone (this schema) |
+| [@id](#id) | `const` | **Required** | Phone (this schema) |
+| [@type](#type) | `const` | Optional | Phone (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Phone (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Phone (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Phone (this schema) |

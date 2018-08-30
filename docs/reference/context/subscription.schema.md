@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/subscription
 
 Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
 ## Schema Hierarchy
 
@@ -63,7 +63,7 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Subscription (this schema) |
+| [@id](#id) | `string` | Optional | Subscription (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Subscription (this schema) |
 | [xdm:billingPeriod](#xdmbillingperiod) | `string` | Optional | Subscription (this schema) |
 | [xdm:billingStartDate](#xdmbillingstartdate) | `string` | Optional | Subscription (this schema) |

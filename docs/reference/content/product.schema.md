@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/context/product
 XDM product variant, master product and key attributes of product in the product catalog.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
 ## Schema Hierarchy
 
@@ -43,7 +43,7 @@ XDM product variant, master product and key attributes of product in the product
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Product (this schema) |
+| [@id](#id) | `string` | Optional | Product (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Product (this schema) |
 | [xdm:COGS](#xdmcogs) | `number` | Optional | Product (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Product (this schema) |

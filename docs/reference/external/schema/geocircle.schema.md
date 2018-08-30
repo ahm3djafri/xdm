@@ -7,8 +7,8 @@ http://schema.org/GeoCircle
 
 A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geocircle.schema.json](external/schema/geocircle.schema.json) |
 ## Schema Hierarchy
 
@@ -36,7 +36,7 @@ A circular region of a particular radius centered on a GeoCoordinate. Based on [
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geo Circle (this schema) |
+| [@id](#id) | `string` | Optional | Geo Circle (this schema) |
 | [schema:coordinates](#schemacoordinates) | Geo Coordinates | Optional | Geo Circle (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Geo Circle (this schema) |
 | [schema:radius](#schemaradius) | `number` | Optional | Geo Circle (this schema) |

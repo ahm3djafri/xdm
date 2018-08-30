@@ -19,8 +19,8 @@ _Content is created by human editors_ in an editorial process that involves crea
 _Content is created for human audiences_, which gives the content the ultimate value.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
 ## Schema Hierarchy
 
@@ -46,7 +46,7 @@ _Content is created for human audiences_, which gives the content the ultimate v
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Content (this schema) |
+| [@id](#id) | `string` | Optional | Content (this schema) |
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
 | [dc:format](#dcformat) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#dcformat) |
@@ -99,7 +99,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -122,7 +122,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -138,7 +138,7 @@ The physical or digital manifestation of the resource. Typically, Format should 
 `dc:format`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#dc:format)
+* defined in [Common Properties](../external/repo/common.schema.md#dcformat)
 
 ### dc:format Type
 
@@ -170,7 +170,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:createDate)
+* defined in [Common Properties](../external/repo/common.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -196,7 +196,7 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 `repo:etag`
 * is optional
 * type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:etag)
+* defined in [Asset](../external/repo/asset.schema.md#repoetag)
 
 ### repo:etag Type
 
@@ -215,7 +215,7 @@ A unique identifier given to every addressable asset in a given repository.
 `repo:id`
 * is optional
 * type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:id)
+* defined in [Asset](../external/repo/asset.schema.md#repoid)
 
 ### repo:id Type
 
@@ -240,7 +240,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:lastModifiedDate`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:lastModifiedDate)
+* defined in [Common Properties](../external/repo/common.schema.md#repolastmodifieddate)
 
 ### repo:lastModifiedDate Type
 
@@ -264,7 +264,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:name`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:name)
+* defined in [Common Properties](../external/repo/common.schema.md#reponame)
 
 ### repo:name Type
 
@@ -282,7 +282,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:path`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:path)
+* defined in [Common Properties](../external/repo/common.schema.md#repopath)
 
 ### repo:path Type
 
@@ -302,7 +302,7 @@ Size of the asset in bytes.
 `repo:size`
 * is optional
 * type: `integer`
-* defined in [Asset](../external/repo/asset.schema.md#repo:size)
+* defined in [Asset](../external/repo/asset.schema.md#reposize)
 
 ### repo:size Type
 
@@ -321,7 +321,7 @@ The version ID of the piece of content. It will be generated both on explicit an
 `repo:version`
 * is optional
 * type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:version)
+* defined in [Asset](../external/repo/asset.schema.md#repoversion)
 
 ### repo:version Type
 
@@ -341,7 +341,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Asset](../external/repo/asset.schema.md#tiff:imageLength)
+* defined in [Asset](../external/repo/asset.schema.md#tiffimagelength)
 
 ### tiff:imageLength Type
 
@@ -362,7 +362,7 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Asset](../external/repo/asset.schema.md#tiff:imageWidth)
+* defined in [Asset](../external/repo/asset.schema.md#tiffimagewidth)
 
 ### tiff:imageWidth Type
 

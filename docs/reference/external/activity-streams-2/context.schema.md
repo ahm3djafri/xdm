@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/external/activity-streams-2/context
 
 A a set of rules for interpreting a JSON-LD document as specified in [the Context of the JSON-LD specification](https://json-ld.org/spec/latest/json-ld/#the-context).
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/context.schema.json](external/activity-streams-2/context.schema.json) |
 
 ## JSON-LD `@context` Example
@@ -25,7 +25,7 @@ A a set of rules for interpreting a JSON-LD document as specified in [the Contex
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@context](#@context) | complex | Optional | JSON-LD `@context` (this schema) |
+| [@context](#context) | complex | Optional | JSON-LD `@context` (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @context
@@ -158,13 +158,13 @@ Unknown type `oneOf`.
 
 | Property | Type | Group |
 |----------|------|-------|
-| [@base](#@base) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
-| [@container](#@container) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@id](#@id) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@language](#@language) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
-| [@reverse](#@reverse) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@type](#@type) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@vocab](#@vocab) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
+| [@base](#base) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
+| [@container](#container) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@id](#id) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@language](#language) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
+| [@reverse](#reverse) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@type](#type) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@vocab](#vocab) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
 
 ## @base
 

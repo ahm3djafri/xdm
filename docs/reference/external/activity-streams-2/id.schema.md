@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/external/activity-streams-2/id
 
 Provides the globally unique identifier for an [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link). Refer to the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) specification for a complete description of the `@id` field.
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Yes | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
 
 ## JSON-LD `@id` Example
@@ -22,7 +22,7 @@ Provides the globally unique identifier for an [Object](https://www.w3.org/TR/ac
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | JSON-LD `@id` (this schema) |
+| [@id](#id) | `string` | Optional | JSON-LD `@id` (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

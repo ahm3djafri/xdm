@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/line
 
 Line Platform Notification
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/line.schema.json](channels/line.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Line Platform Notification
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | LINE (this schema) |
-| [@type](#@type) | `const` | Optional | LINE (this schema) |
+| [@id](#id) | `const` | **Required** | LINE (this schema) |
+| [@type](#type) | `const` | Optional | LINE (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | LINE (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | LINE (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | LINE (this schema) |

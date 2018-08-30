@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/channels/application
 An application that accepts messages or emit events (Facebook page, Mobile App, ...).
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/application.schema.json](channels/application.schema.json) |
 
 ## Application Example
@@ -25,7 +25,7 @@ An application that accepts messages or emit events (Facebook page, Mobile App, 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Application (this schema) |
+| [@id](#id) | `string` | Optional | Application (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Application (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Application (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

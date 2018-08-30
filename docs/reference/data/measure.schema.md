@@ -10,8 +10,8 @@ A measure is a concrete quantifiable data point of a particular metric.
 It has a value, and optionally a unit, although the unit can be inferred from the measure's metric.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measure.schema.json](data/measure.schema.json) |
 
 ## Measure Example
@@ -27,7 +27,7 @@ It has a value, and optionally a unit, although the unit can be inferred from th
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `string` | Optional | Measure (this schema) |
+| [@type](#type) | `string` | Optional | Measure (this schema) |
 | [xdm:id](#xdmid) | `string` | Optional | Measure (this schema) |
 | [xdm:unit](#xdmunit) | complex | Optional | Measure (this schema) |
 | [xdm:value](#xdmvalue) | `number` | **Required** | Measure (this schema) |

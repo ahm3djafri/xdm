@@ -7,8 +7,8 @@ http://ns.adobe.com/adobecloud/core/1.0/asset
 
 An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
 ## Schema Hierarchy
 
@@ -66,7 +66,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -89,7 +89,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -105,7 +105,7 @@ The physical or digital manifestation of the resource. Typically, Format should 
 `dc:format`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#dc:format)
+* defined in [Common Properties](common.schema.md#dcformat)
 
 ### dc:format Type
 
@@ -137,7 +137,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:createDate)
+* defined in [Common Properties](common.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -207,7 +207,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:lastModifiedDate`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:lastModifiedDate)
+* defined in [Common Properties](common.schema.md#repolastmodifieddate)
 
 ### repo:lastModifiedDate Type
 
@@ -231,7 +231,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:name`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:name)
+* defined in [Common Properties](common.schema.md#reponame)
 
 ### repo:name Type
 
@@ -249,7 +249,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:path`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:path)
+* defined in [Common Properties](common.schema.md#repopath)
 
 ### repo:path Type
 

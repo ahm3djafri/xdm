@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/beacon-interaction-details
 
 Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/beacon-interaction-details.schema.json](context/beacon-interaction-details.schema.json) |
 ## Schema Hierarchy
 
@@ -86,7 +86,7 @@ Estimated distance from the beacon.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:proximity-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmproximity-known-values).
 
 ### xdm:proximity Known Values
 | Value | Description |

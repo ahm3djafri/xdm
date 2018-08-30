@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/orgunit
 
 The organizaational unit of a parent organization.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [common/orgunit.schema.json](common/orgunit.schema.json) |
 
 ## Organizational Unit Example
@@ -23,7 +23,7 @@ The organizaational unit of a parent organization.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Organizational Unit (this schema) |
+| [@id](#id) | `string` | Optional | Organizational Unit (this schema) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Organizational Unit (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

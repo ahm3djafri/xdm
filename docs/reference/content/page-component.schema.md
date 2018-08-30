@@ -10,8 +10,8 @@ It contains content fragments and has a specific type.
 The type determines how the component will be displayed, rendered, and authored.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/page-component.schema.json](content/page-component.schema.json) |
 ## Schema Hierarchy
 
@@ -20,13 +20,6 @@ The type determines how the component will be displayed, rendered, and authored.
 
 
 ## Page Component Examples
-
-```json
-{
-  "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",
-  "dc:title": "Protect Your Eyes"
-}
-```
 
 ```json
 {
@@ -39,12 +32,19 @@ The type determines how the component will be displayed, rendered, and authored.
 }
 ```
 
+```json
+{
+  "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",
+  "dc:title": "Protect Your Eyes"
+}
+```
+
 
 # Page Component Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `string` | Optional | Page Component (this schema) |
+| [@type](#type) | `string` | Optional | Page Component (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type

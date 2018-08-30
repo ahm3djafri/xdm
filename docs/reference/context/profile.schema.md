@@ -24,8 +24,8 @@ for other Profile data such as preference, propensities and other attributes.
 
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 ## Schema Hierarchy
 
@@ -141,36 +141,36 @@ for other Profile data such as preference, propensities and other attributes.
 
 # Profile Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
-| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastmodifieddate) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile (this schema) |
-| [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:geoUnit](#xdmgeounit) | Geographical Unit | Optional | Profile (this schema) |
-| [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
-| [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
-| [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
-| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
-| [xdm:orgUnit](#xdmorgunit) | Organizational Unit | Optional | Profile (this schema) |
-| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile (this schema) |
-| [xdm:person](#xdmperson) | Person | Optional | Profile (this schema) |
-| [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional | Profile (this schema) |
-| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional | Profile (this schema) |
-| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional | Profile (this schema) |
-| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional | Profile (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
-| [xdm:segments](#xdmsegments) | Segment Membership | Optional | Profile (this schema) |
-| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
-| [xdm:testProfile](#xdmtestprofile) | `boolean` | Optional | Profile (this schema) |
-| [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile (this schema) |
-| [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile (this schema) |
-| [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile (this schema) |
-| [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [repo:createDate](#repocreatedate) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#repolastmodifieddate) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:emailFormat](#xdmemailformat) | `string` | Optional |  | Profile (this schema) |
+| [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional |  | Profile (this schema) |
+| [xdm:geoUnit](#xdmgeounit) | Geographical Unit | Optional |  | Profile (this schema) |
+| [xdm:homeAddress](#xdmhomeaddress) | Address | Optional |  | Profile (this schema) |
+| [xdm:homePhone](#xdmhomephone) | Phone Number | Optional |  | Profile (this schema) |
+| [xdm:identities](#xdmidentities) | Identity | Optional |  | Profile (this schema) |
+| [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional |  | Profile (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional |  | Profile (this schema) |
+| [xdm:orgUnit](#xdmorgunit) | Organizational Unit | Optional |  | Profile (this schema) |
+| [xdm:organizations](#xdmorganizations) | `string[]` | Optional |  | Profile (this schema) |
+| [xdm:person](#xdmperson) | Person | Optional |  | Profile (this schema) |
+| [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional |  | Profile (this schema) |
+| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional |  | Profile (this schema) |
+| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional |  | Profile (this schema) |
+| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional |  | Profile (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:segments](#xdmsegments) | Segment Membership | Optional |  | Profile (this schema) |
+| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional |  | Profile (this schema) |
+| [xdm:testProfile](#xdmtestprofile) | `boolean` | Optional | `false` | Profile (this schema) |
+| [xdm:timeZone](#xdmtimezone) | `string` | Optional |  | Profile (this schema) |
+| [xdm:workAddress](#xdmworkaddress) | Address | Optional |  | Profile (this schema) |
+| [xdm:workEmail](#xdmworkemail) | Email Address | Optional |  | Profile (this schema) |
+| [xdm:workPhone](#xdmworkphone) | Phone Number | Optional |  | Profile (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:createDate
@@ -180,7 +180,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repo:createDate)
+* defined in [Audit Trail](../common/auditable.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -205,7 +205,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:lastModifiedDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repo:lastModifiedDate)
+* defined in [Audit Trail](../common/auditable.schema.md#repolastmodifieddate)
 
 ### repo:lastModifiedDate Type
 
@@ -232,7 +232,7 @@ The Data Set Files in Catalog Services which has been originating the creation o
 `xdm:createdByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:createdByBatchID)
+* defined in [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid)
 
 ### xdm:createdByBatchID Type
 
@@ -406,7 +406,7 @@ At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 `xdm:modifiedByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:modifiedByBatchID)
+* defined in [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid)
 
 ### xdm:modifiedByBatchID Type
 
@@ -625,7 +625,7 @@ User id who has created the entity.
 `xdm:repositoryCreatedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:repositoryCreatedBy)
+* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby)
 
 ### xdm:repositoryCreatedBy Type
 
@@ -647,7 +647,7 @@ At creation time, `modifiedByUser` is set as `createdByUser`.
 `xdm:repositoryLastModifiedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:repositoryLastModifiedBy)
+* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
 
@@ -717,6 +717,7 @@ Indicates the `profile` record is for use in testing/verification purposes and s
 `xdm:testProfile`
 * is optional
 * type: `boolean`
+* default: `false`
 * defined in this schema
 
 ### xdm:testProfile Type

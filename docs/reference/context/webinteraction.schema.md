@@ -10,8 +10,8 @@ The Web Interaction schema captures information about interactions that happened
 It is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webinteraction.schema.json](context/webinteraction.schema.json) |
 ## Schema Hierarchy
 
@@ -110,7 +110,7 @@ The link type.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:type-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtype-known-values).
 
 ### xdm:type Known Values
 | Value | Description |

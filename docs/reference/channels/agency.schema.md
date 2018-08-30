@@ -10,8 +10,8 @@ This channel has no specific mechanism and is designed for descriptive purposes 
 Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/agency.schema.json](channels/agency.schema.json) |
 ## Schema Hierarchy
 
@@ -32,8 +32,8 @@ Such as, to define experiences for which you want to keep a trace of the populat
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | E-Mail (this schema) |
-| [@type](#@type) | `const` | Optional | E-Mail (this schema) |
+| [@id](#id) | `const` | **Required** | E-Mail (this schema) |
+| [@type](#type) | `const` | Optional | E-Mail (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail (this schema) |

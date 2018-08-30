@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/identity
 
 Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
 ## Schema Hierarchy
 
@@ -41,13 +41,13 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 # Identity Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | Identity (this schema) |
-| [xdm:id](#xdmid) | `string` | Optional | Identity (this schema) |
-| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity (this schema) |
-| [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | Identity (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional |  | Identity (this schema) |
+| [xdm:namespace](#xdmnamespace) | Namespace | Optional |  | Identity (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | Identity (this schema) |
+| [xdm:xid](#xdmxid) | `string` | Optional |  | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:authenticatedState
@@ -57,9 +57,10 @@ The state this identity is authenticated as for this observed ExperienceEvent.
 `xdm:authenticatedState`
 * is optional
 * type: `enum`
+* default: `"ambiguous"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:authenticatedState-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmauthenticatedstate-known-values).
 
 ### xdm:authenticatedState Known Values
 | Value | Description |
@@ -118,6 +119,7 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 `xdm:primary`
 * is optional
 * type: `boolean`
+* default: `false`
 * defined in this schema
 
 ### xdm:primary Type

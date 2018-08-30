@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/address
 
 A postal address. Address could relate to a person's home, work, preferred store location etc.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
 ## Schema Hierarchy
 
@@ -38,37 +38,37 @@ A postal address. Address could relate to a person's home, work, preferred store
 
 # Address Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id) |
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](auditable.schema.md#repocreatedate) |
-| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Audit Trail](auditable.schema.md#repolastmodifieddate) |
-| [schema:description](#schemadescription) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
-| [schema:elevation](#schemaelevation) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
-| [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
-| [schema:longitude](#schemalongitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
-| [xdm:city](#xdmcity) | `string` | Optional | [Geo](geo.schema.md#xdmcity) |
-| [xdm:country](#xdmcountry) | `string` | Optional | Address (this schema) |
-| [xdm:countryCode](#xdmcountrycode) | `string` | Optional | [Geo](geo.schema.md#xdmcountrycode) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:dmaID](#xdmdmaid) | `integer` | Optional | [Geo](geo.schema.md#xdmdmaid) |
-| [xdm:label](#xdmlabel) | `string` | Optional | Address (this schema) |
-| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional | Address (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
-| [xdm:msaID](#xdmmsaid) | `integer` | Optional | [Geo](geo.schema.md#xdmmsaid) |
-| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional | Address (this schema) |
-| [xdm:postalCode](#xdmpostalcode) | `string` | Optional | [Geo](geo.schema.md#xdmpostalcode) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Address (this schema) |
-| [xdm:region](#xdmregion) | `string` | Optional | Address (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
-| [xdm:stateProvince](#xdmstateprovince) | `string` | Optional | [Geo](geo.schema.md#xdmstateprovince) |
-| [xdm:status](#xdmstatus) | `string` | Optional | Address (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Address (this schema) |
-| [xdm:street1](#xdmstreet1) | `string` | Optional | Address (this schema) |
-| [xdm:street2](#xdmstreet2) | `string` | Optional | Address (this schema) |
-| [xdm:street3](#xdmstreet3) | `string` | Optional | Address (this schema) |
-| [xdm:street4](#xdmstreet4) | `string` | Optional | Address (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [@id](#id) | `string` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#id) |
+| [repo:createDate](#repocreatedate) | `string` | Optional |  | [Audit Trail](auditable.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional |  | [Audit Trail](auditable.schema.md#repolastmodifieddate) |
+| [schema:description](#schemadescription) | `string` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
+| [schema:elevation](#schemaelevation) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
+| [schema:latitude](#schemalatitude) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
+| [schema:longitude](#schemalongitude) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
+| [xdm:city](#xdmcity) | `string` | Optional |  | [Geo](geo.schema.md#xdmcity) |
+| [xdm:country](#xdmcountry) | `string` | Optional |  | Address (this schema) |
+| [xdm:countryCode](#xdmcountrycode) | `string` | Optional |  | [Geo](geo.schema.md#xdmcountrycode) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:dmaID](#xdmdmaid) | `integer` | Optional |  | [Geo](geo.schema.md#xdmdmaid) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | Address (this schema) |
+| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | Address (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:msaID](#xdmmsaid) | `integer` | Optional |  | [Geo](geo.schema.md#xdmmsaid) |
+| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | Address (this schema) |
+| [xdm:postalCode](#xdmpostalcode) | `string` | Optional |  | [Geo](geo.schema.md#xdmpostalcode) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Address (this schema) |
+| [xdm:region](#xdmregion) | `string` | Optional |  | Address (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:stateProvince](#xdmstateprovince) | `string` | Optional |  | [Geo](geo.schema.md#xdmstateprovince) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Address (this schema) |
+| [xdm:street1](#xdmstreet1) | `string` | Optional |  | Address (this schema) |
+| [xdm:street2](#xdmstreet2) | `string` | Optional |  | Address (this schema) |
+| [xdm:street3](#xdmstreet3) | `string` | Optional |  | Address (this schema) |
+| [xdm:street4](#xdmstreet4) | `string` | Optional |  | Address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -79,7 +79,7 @@ The unique identifier of the coordinates.
 `@id`
 * is optional
 * type: `string`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#id)
 
 ### @id Type
 
@@ -99,7 +99,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#repo:createDate)
+* defined in [Audit Trail](auditable.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -124,7 +124,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:lastModifiedDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#repo:lastModifiedDate)
+* defined in [Audit Trail](auditable.schema.md#repolastmodifieddate)
 
 ### repo:lastModifiedDate Type
 
@@ -150,7 +150,7 @@ A description of what the coordinates identify.
 `schema:description`
 * is optional
 * type: `string`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:description)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription)
 
 ### schema:description Type
 
@@ -170,7 +170,7 @@ The specific elevation of the defined coordinate. The value conforms to the [WGS
 `schema:elevation`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:elevation)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation)
 
 ### schema:elevation Type
 
@@ -190,7 +190,7 @@ The signed vertical coordinate of a geographic point.
 `schema:latitude`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:latitude)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude)
 
 ### schema:latitude Type
 
@@ -211,7 +211,7 @@ The signed horizontal coordinate of a geographic point.
 `schema:longitude`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:longitude)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude)
 
 ### schema:longitude Type
 
@@ -232,7 +232,7 @@ The name of the city.
 `xdm:city`
 * is optional
 * type: `string`
-* defined in [Geo](geo.schema.md#xdm:city)
+* defined in [Geo](geo.schema.md#xdmcity)
 
 ### xdm:city Type
 
@@ -272,7 +272,7 @@ The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) cod
 `xdm:countryCode`
 * is optional
 * type: `string`
-* defined in [Geo](geo.schema.md#xdm:countryCode)
+* defined in [Geo](geo.schema.md#xdmcountrycode)
 
 ### xdm:countryCode Type
 
@@ -300,7 +300,7 @@ The Data Set Files in Catalog Services which has been originating the creation o
 `xdm:createdByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdm:createdByBatchID)
+* defined in [Audit Trail](auditable.schema.md#xdmcreatedbybatchid)
 
 ### xdm:createdByBatchID Type
 
@@ -321,7 +321,7 @@ The Nielsen Media Research designated market area.
 `xdm:dmaID`
 * is optional
 * type: `integer`
-* defined in [Geo](geo.schema.md#xdm:dmaID)
+* defined in [Geo](geo.schema.md#xdmdmaid)
 
 ### xdm:dmaID Type
 
@@ -384,7 +384,7 @@ At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 `xdm:modifiedByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdm:modifiedByBatchID)
+* defined in [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid)
 
 ### xdm:modifiedByBatchID Type
 
@@ -405,7 +405,7 @@ The Metropolitan Statistical Area in the USA where the observation occurred.
 `xdm:msaID`
 * is optional
 * type: `integer`
-* defined in [Geo](geo.schema.md#xdm:msaID)
+* defined in [Geo](geo.schema.md#xdmmsaid)
 
 ### xdm:msaID Type
 
@@ -446,7 +446,7 @@ The postal code of the location. Postal codes are not available for all countrie
 `xdm:postalCode`
 * is optional
 * type: `string`
-* defined in [Geo](geo.schema.md#xdm:postalCode)
+* defined in [Geo](geo.schema.md#xdmpostalcode)
 
 ### xdm:postalCode Type
 
@@ -507,7 +507,7 @@ User id who has created the entity.
 `xdm:repositoryCreatedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdm:repositoryCreatedBy)
+* defined in [Audit Trail](auditable.schema.md#xdmrepositorycreatedby)
 
 ### xdm:repositoryCreatedBy Type
 
@@ -529,7 +529,7 @@ At creation time, `modifiedByUser` is set as `createdByUser`.
 `xdm:repositoryLastModifiedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdm:repositoryLastModifiedBy)
+* defined in [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
 
@@ -549,7 +549,7 @@ The state, or province portion of the observation. The format follows the [ISO 3
 `xdm:stateProvince`
 * is optional
 * type: `string`
-* defined in [Geo](geo.schema.md#xdm:stateProvince)
+* defined in [Geo](geo.schema.md#xdmstateprovince)
 
 ### xdm:stateProvince Type
 
@@ -593,6 +593,7 @@ An indication as to the ability to use the address.
 `xdm:status`
 * is optional
 * type: `string`
+* default: `"active"`
 * defined in this schema
 
 ### xdm:status Type

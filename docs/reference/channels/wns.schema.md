@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/wns
 
 Windows Push Notification Service.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Windows Push Notification Service.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | WNS (this schema) |
-| [@type](#@type) | `const` | Optional | WNS (this schema) |
+| [@id](#id) | `const` | **Required** | WNS (this schema) |
+| [@type](#type) | `const` | Optional | WNS (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WNS (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WNS (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WNS (this schema) |

@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/content/component-container
 A container for `Page Component`s, this means for content blocks that are within a _Componentized Page_, not a container for componentized pages themselves. Components in the container can be ordered or unordered, and the type of the container determines how the container is authored, configured, rendered, and displayed.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/component-container.schema.json](content/component-container.schema.json) |
 
 ## Component Container Example
@@ -46,7 +46,7 @@ A container for `Page Component`s, this means for content blocks that are within
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `string` | **Required** | Component Container (this schema) |
+| [@type](#type) | `string` | **Required** | Component Container (this schema) |
 | [xdm:items](#xdmitems) | `object` | **Required** | Component Container (this schema) |
 | [xdm:itemsOrder](#xdmitemsorder) | `string[]` | Optional | Component Container (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -86,7 +86,7 @@ The items of this container.
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 

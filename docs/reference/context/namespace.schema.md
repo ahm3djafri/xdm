@@ -34,8 +34,8 @@ Related:
 Namespaces are similar to datasources, both in the use of codes and in the assumed architecture for their use. The core difference being datasources are used to uniquely identify specific sources of general data in an uncoordinated data environment, such as independent data collection applications.  These concepts are distinct because the source of data, and the source of the identities contained in that data, may not be the same.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/namespace.schema.json](context/namespace.schema.json) |
 ## Schema Hierarchy
 

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/external/repo/effectiveprivileges
 
 Schema for the Effective Privileges resource
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/effectiveprivileges.schema.json](external/repo/effectiveprivileges.schema.json) |
 
 ## Effective Privileges Example
@@ -28,7 +28,7 @@ Schema for the Effective Privileges resource
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [*](#*) | `enum[]` | Optional | Effective Privileges (this schema) |
+| [*](#) | `enum[]` | Optional | Effective Privileges (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## *

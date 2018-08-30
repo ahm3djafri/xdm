@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/email
 
 E-Mail messages, delivered via SMTP to list subscribers.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ E-Mail messages, delivered via SMTP to list subscribers.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | E-Mail (this schema) |
-| [@type](#@type) | `const` | Optional | E-Mail (this schema) |
+| [@id](#id) | `const` | **Required** | E-Mail (this schema) |
+| [@type](#type) | `const` | Optional | E-Mail (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail (this schema) |

@@ -11,8 +11,8 @@ The information in this schema is semantically compatible with the information i
 > **Note:** While the [HTTP specification](https://www.w3.org/Protocols/HTTP/HTRQ_Headers.html#z14) uses the term "referer", XDM follows the [Document Object Model specification ](https://www.w3.org/TR/2000/WD-DOM-Level-1-20000929/level-one-html.html#ID-95229140) and uses the spelling "referrer", which is more widely accepted as the correct spelling.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
 ## Schema Hierarchy
 
@@ -66,7 +66,7 @@ The referrer type.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:type-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtype-known-values).
 
 ### xdm:type Known Values
 | Value | Description |

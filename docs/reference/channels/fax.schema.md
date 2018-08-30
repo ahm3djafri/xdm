@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/fax
 
 Telefacsimile
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/fax.schema.json](channels/fax.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Telefacsimile
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Fax (this schema) |
-| [@type](#@type) | `const` | Optional | Fax (this schema) |
+| [@id](#id) | `const` | **Required** | Fax (this schema) |
+| [@type](#type) | `const` | Optional | Fax (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Fax (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Fax (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Fax (this schema) |

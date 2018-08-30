@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/principal
 
 This model represents a principal in an access control system. Principals are entities that have been authenticated against an identity provider.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/principal.schema.json](common/principal.schema.json) |
 ## Schema Hierarchy
 
@@ -31,8 +31,8 @@ This model represents a principal in an access control system. Principals are en
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | Principal (this schema) |
-| [@type](#@type) | `string` | **Required** | Principal (this schema) |
+| [@id](#id) | `string` | **Required** | Principal (this schema) |
+| [@type](#type) | `string` | **Required** | Principal (this schema) |
 | [xdm:provider](#xdmprovider) | Identity Provider | **Required** | Principal (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

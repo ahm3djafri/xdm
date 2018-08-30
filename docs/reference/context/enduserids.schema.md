@@ -13,8 +13,8 @@ Each value consists of the (required) ID that is native to the data source, and 
 Additionally, this schema can include a property that describes the data source that is responsible for identity stitching.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
@@ -51,14 +51,14 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/aacustomid](#https//ns.adobe.com/experience/aacustomid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/adcloud](#https//ns.adobe.com/experience/adcloud) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/emailid](#https//ns.adobe.com/experience/emailid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/phonenumberid](#https//ns.adobe.com/experience/phonenumberid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/aacustomid](#httpsnsadobecomexperienceaacustomid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/aaid](#httpsnsadobecomexperienceaaid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/acid](#httpsnsadobecomexperienceacid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/adcloud](#httpsnsadobecomexperienceadcloud) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/emailid](#httpsnsadobecomexperienceemailid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/mcid](#httpsnsadobecomexperiencemcid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/phonenumberid](#httpsnsadobecomexperiencephonenumberid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/tntid](#httpsnsadobecomexperiencetntid) | Identity | Optional | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/aacustomid

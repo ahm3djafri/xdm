@@ -7,11 +7,21 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolentry
 
 Schema for the Access Control Entry for the Access Control List of a resource
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
 
 ## Access Control Entry Examples
+
+```json
+{
+  "repo:principal": "authenticated",
+  "repo:privileges": [
+    "read"
+  ],
+  "repo:modifier": "grant"
+}
+```
 
 ```json
 {
@@ -31,26 +41,16 @@ Schema for the Access Control Entry for the Access Control List of a resource
 }
 ```
 
-```json
-{
-  "repo:principal": "authenticated",
-  "repo:privileges": [
-    "read"
-  ],
-  "repo:modifier": "grant"
-}
-```
-
 
 # Access Control Entry Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [repo:inheritance](#repoinheritance) | `string` | Optional | Access Control Entry (this schema) |
-| [repo:modifier](#repomodifier) | `string` | Optional | Access Control Entry (this schema) |
-| [repo:principal](#repoprincipal) | complex | Optional | Access Control Entry (this schema) |
-| [repo:privileges](#repoprivileges) | reference | Optional | Access Control Entry (this schema) |
-| [repo:relations](#reporelations) | `string[]` | Optional | Access Control Entry (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [repo:inheritance](#repoinheritance) | `string` | Optional | `"deep"` | Access Control Entry (this schema) |
+| [repo:modifier](#repomodifier) | `string` | Optional | `"grant"` | Access Control Entry (this schema) |
+| [repo:principal](#repoprincipal) | complex | Optional |  | Access Control Entry (this schema) |
+| [repo:privileges](#repoprivileges) | reference | Optional |  | Access Control Entry (this schema) |
+| [repo:relations](#reporelations) | `string[]` | Optional |  | Access Control Entry (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:inheritance
@@ -60,6 +60,7 @@ Optional inheritance of the ace: whether the deny or grant is inherited by the c
 `repo:inheritance`
 * is optional
 * type: `string`
+* default: `"deep"`
 * defined in this schema
 
 ### repo:inheritance Type
@@ -85,6 +86,7 @@ Optional modified to the privilege: either grant or deny to grant or deny, resp.
 `repo:modifier`
 * is optional
 * type: `string`
+* default: `"grant"`
 * defined in this schema
 
 ### repo:modifier Type

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/place
 
 A place in the real world with a physical location.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
 ## Schema Hierarchy
 
@@ -50,7 +50,7 @@ A place in the real world with a physical location.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Place (this schema) |
+| [@id](#id) | `string` | Optional | Place (this schema) |
 | [schema:branchCode](#schemabranchcode) | `string` | Optional | Place (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Place (this schema) |
 | [schema:telephone](#schematelephone) | `string` | Optional | Place (this schema) |

@@ -7,8 +7,8 @@ http://schema.org/GeoShape
 
 The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
 ## Schema Hierarchy
 
@@ -40,7 +40,7 @@ The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShap
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geo Shape (this schema) |
+| [@id](#id) | `string` | Optional | Geo Shape (this schema) |
 | [schema:box](#schemabox) | Geo Coordinates | Optional | Geo Shape (this schema) |
 | [schema:circle](#schemacircle) | Geo Circle | Optional | Geo Shape (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Geo Shape (this schema) |

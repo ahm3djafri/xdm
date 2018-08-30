@@ -22,8 +22,8 @@ Some examples of the `rejected event` include:
 4.  A purchase order was rejected by a firm owing to non payment of previous dues.
 
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
 ## Schema Hierarchy
 
@@ -73,7 +73,7 @@ Some examples of the `rejected event` include:
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `const` | Optional | Rejected Event (this schema) |
+| [@type](#type) | `const` | Optional | Rejected Event (this schema) |
 | [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -102,7 +102,7 @@ This is the type of the `object` that has been emitting this event. The value of
 `xdm:objectType`
 * is optional
 * type: complex
-* defined in [EventEnvelope](../eventenvelope.schema.md#xdm:objectType)
+* defined in [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype)
 
 ### xdm:objectType Type
 

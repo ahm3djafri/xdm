@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/event/created
 
 A `created event` follows semantics that are exactly equivalent to the semantics described by the [`create activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create), except for one difference. The `create activity` can be used in imperative contexts, however, the `created event` can only be used in passive contexts.
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/created.schema.json](common/event/created.schema.json) |
 ## Schema Hierarchy
 
@@ -50,7 +50,7 @@ A `created event` follows semantics that are exactly equivalent to the semantics
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `const` | Optional | Created Event (this schema) |
+| [@type](#type) | `const` | Optional | Created Event (this schema) |
 | [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -79,7 +79,7 @@ This is the type of the `object` that has been emitting this event. The value of
 `xdm:objectType`
 * is optional
 * type: complex
-* defined in [EventEnvelope](../eventenvelope.schema.md#xdm:objectType)
+* defined in [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype)
 
 ### xdm:objectType Type
 

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/media-timed-asset-reference
 
 Asset information about the main content that was played, but present on all ads and chapters that occur during the content's playback as well.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/media-timed-asset-reference.schema.json](context/media-timed-asset-reference.schema.json) |
 ## Schema Hierarchy
 
@@ -58,7 +58,7 @@ Asset information about the main content that was played, but present on all ads
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
 | [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional | Timed Media Primary Asset Reference (this schema) |
 | [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional | Timed Media Primary Asset Reference (this schema) |

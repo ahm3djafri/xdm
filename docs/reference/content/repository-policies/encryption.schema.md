@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/content/repository-policies/encryption
 Encryption policy represents how content in a given part of the repository is encrypted at-rest.
 
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/encryption.schema.json](content/repository-policies/encryption.schema.json) |
 
 ## At-Rest Encryption Example
@@ -36,7 +36,7 @@ The status of the encryption key - 'enabled': the key is enabled and content is 
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:keyStatus-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmkeystatus-known-values).
 
 ### xdm:keyStatus Known Values
 | Value | Description |
@@ -56,7 +56,7 @@ The type of encryption key - 'platform': a key used across all tenants of the pl
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:keyType-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmkeytype-known-values).
 
 ### xdm:keyType Known Values
 | Value | Description |

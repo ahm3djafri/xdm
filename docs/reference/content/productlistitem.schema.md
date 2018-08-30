@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/content/productlistitem
 
 The product list item is a list item representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/productlistitem.schema.json](content/productlistitem.schema.json) |
 
 ## Product List Item Example
@@ -28,7 +28,7 @@ The product list item is a list item representing a product selected by a custom
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Product List Item (this schema) |
+| [@id](#id) | `string` | Optional | Product List Item (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Product List Item (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product List Item (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product List Item (this schema) |

@@ -11,8 +11,8 @@ This schema is intended for full page details and initial page loads of single p
 For interactions that are happening on a loaded page that do not trigger a new page load, see `WebInteraction`.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webpagedetails.schema.json](context/webpagedetails.schema.json) |
 ## Schema Hierarchy
 

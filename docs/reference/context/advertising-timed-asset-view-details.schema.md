@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details
 
 View details for the ad playback captured by the experience event.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/advertising-timed-asset-view-details.schema.json](context/advertising-timed-asset-view-details.schema.json) |
 ## Schema Hierarchy
 

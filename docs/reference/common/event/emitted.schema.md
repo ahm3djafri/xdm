@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/event/emitted
 
 The `emitted event` represents the activity of emitting a message or some `object`. This event type provides the capability to conform custom activities to the XDM Event Envelope. A custom activity is one where the system transporting the event isn't aware of what is in the event. A custom activity typically tends to be configured by a system's end user. Take, for example, custom OSGI events in AEM. One concern does arise regarding the `emitted event`, which is, its generic nature that allows for almost every activity to be modeled as 'message emitted' activity. This, however, is a trap that publishers of the XDM Event Envelope must steer away from.
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
 ## Schema Hierarchy
 
@@ -46,7 +46,7 @@ The `emitted event` represents the activity of emitting a message or some `objec
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `const` | Optional | Emitted Event (this schema) |
+| [@type](#type) | `const` | Optional | Emitted Event (this schema) |
 | [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -75,7 +75,7 @@ This is the type of the `object` that has been emitting this event. The value of
 `xdm:objectType`
 * is optional
 * type: complex
-* defined in [EventEnvelope](../eventenvelope.schema.md#xdm:objectType)
+* defined in [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype)
 
 ### xdm:objectType Type
 

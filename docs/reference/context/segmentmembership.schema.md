@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/segmentmembership
 
 Details about a segment membership.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentmembership.schema.json](context/segmentmembership.schema.json) |
 ## Schema Hierarchy
 
@@ -38,14 +38,14 @@ Details about a segment membership.
 
 # Segment Membership Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:payload](#xdmpayload) | `object` | Optional | Segment Membership (this schema) |
-| [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional | Segment Membership (this schema) |
-| [xdm:status](#xdmstatus) | `enum` | Optional | Segment Membership (this schema) |
-| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Segment Membership (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional |  | Segment Membership (this schema) |
+| [xdm:payload](#xdmpayload) | `object` | Optional |  | Segment Membership (this schema) |
+| [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional |  | Segment Membership (this schema) |
+| [xdm:status](#xdmstatus) | `enum` | Optional | `"realized"` | Segment Membership (this schema) |
+| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional |  | Segment Membership (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional |  | Segment Membership (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:lastQualificationTime
@@ -85,13 +85,13 @@ Values that are directly related with the segment realization. This payload exis
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
-| `xdm:payloadBooleanValue`| boolean | Optional | 
-| `xdm:payloadNumberValue`| number | Optional | 
-| `xdm:payloadPropensityValue`| number | Optional | 
-| `xdm:payloadStringValue`| string | Optional | 
-| `xdm:payloadType`| string | **Required** | 
+| `xdm:payloadBooleanValue`| boolean | Optional |
+| `xdm:payloadNumberValue`| number | Optional |
+| `xdm:payloadPropensityValue`| number | Optional |
+| `xdm:payloadStringValue`| string | Optional |
+| `xdm:payloadType`| string | **Required** |
 
 
 
@@ -185,9 +185,9 @@ The type of payload.
 
 `xdm:payloadType`
 * is **required**
-* type: `string`
+* type: `enum`
 
-The value of this property **must** be equal to one of the [known values below](#xdm:payloadType-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmpayload-known-values).
 
 ##### xdm:payloadType Known Values
 | Value | Description |
@@ -232,9 +232,10 @@ Is the segment participation realized as part of the current request.
 `xdm:status`
 * is optional
 * type: `enum`
+* default: `"realized"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:status-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmstatus-known-values).
 
 ### xdm:status Known Values
 | Value | Description |

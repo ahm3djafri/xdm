@@ -7,8 +7,8 @@ http://schema.org/GeoCoordinates
 
 The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
 
 ## Geo Coordinates Example
@@ -26,7 +26,7 @@ The geographic coordinates of a place. Based on [schema.org](http://schema.org/G
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geo Coordinates (this schema) |
+| [@id](#id) | `string` | Optional | Geo Coordinates (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Geo Coordinates (this schema) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | Geo Coordinates (this schema) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | Geo Coordinates (this schema) |

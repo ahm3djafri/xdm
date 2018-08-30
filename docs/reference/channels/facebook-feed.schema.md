@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/facebook-feed
 
 The Facebook News Feed. This does not include Facebook Messenger, or Facebook App pages.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ The Facebook News Feed. This does not include Facebook Messenger, or Facebook Ap
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Facebook News Feed (this schema) |
-| [@type](#@type) | `const` | Optional | Facebook News Feed (this schema) |
+| [@id](#id) | `const` | **Required** | Facebook News Feed (this schema) |
+| [@type](#type) | `const` | Optional | Facebook News Feed (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Facebook News Feed (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Facebook News Feed (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Facebook News Feed (this schema) |

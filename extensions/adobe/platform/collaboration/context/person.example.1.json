@@ -1,0 +1,12 @@
+{
+  "xdm:name": {
+    "xdm:firstName": "Jane",
+    "xdm:middleName": "F",
+    "xdm:lastName": "Doe",
+    "xdm:fullName": "Jane F. Doe"
+  },
+  "xdm:birthMonth": 1,
+  "xdm:birthDay": 3,
+  "xdm:birthYear": 1996,
+  "xdm:gender": "female"
+}

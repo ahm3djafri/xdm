@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/data/datasource
 The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
 
 ## Data Source Example
@@ -24,7 +24,7 @@ The Datasource acts as a namespace or unique identifier associated with a collec
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Data Source (this schema) |
+| [@id](#id) | `string` | Optional | Data Source (this schema) |
 | [xdm:code](#xdmcode) | `string` | Optional | Data Source (this schema) |
 | [xdm:tags](#xdmtags) | `string[]` | Optional | Data Source (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

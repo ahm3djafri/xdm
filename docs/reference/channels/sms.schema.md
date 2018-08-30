@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/sms
 
 Short Message Service delivered to a mobile phone.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/sms.schema.json](channels/sms.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Short Message Service delivered to a mobile phone.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | SMS (this schema) |
-| [@type](#@type) | `const` | Optional | SMS (this schema) |
+| [@id](#id) | `const` | **Required** | SMS (this schema) |
+| [@type](#type) | `const` | Optional | SMS (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | SMS (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | SMS (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | SMS (this schema) |

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/channels/mpns
 
 Microsoft Push Notification Service
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
 ## Schema Hierarchy
 
@@ -29,8 +29,8 @@ Microsoft Push Notification Service
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | MPNS (this schema) |
-| [@type](#@type) | `const` | Optional | MPNS (this schema) |
+| [@id](#id) | `const` | **Required** | MPNS (this schema) |
+| [@type](#type) | `const` | Optional | MPNS (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | MPNS (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | MPNS (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | MPNS (this schema) |
