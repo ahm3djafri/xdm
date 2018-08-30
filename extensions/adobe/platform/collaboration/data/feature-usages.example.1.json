@@ -1,6 +1,0 @@
-{
-  "schema:name": "application metric: featureUsages",
-  "@id": "xdm:featureUsages",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}

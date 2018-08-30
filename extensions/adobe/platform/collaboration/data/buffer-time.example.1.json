@@ -1,6 +1,0 @@
-{
-  "schema:name": "metric: bufferTime",
-  "@id": "xdm:bufferTime",
-  "xdm:measurement": "time",
-  "xdm:unit": "second"
-}

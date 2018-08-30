@@ -1,6 +1,0 @@
-{
-  "schema:name": "advertising/viewability metric: viewableFirstQuartiles",
-  "@id": "xdm:viewableFirstQuartiles",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}

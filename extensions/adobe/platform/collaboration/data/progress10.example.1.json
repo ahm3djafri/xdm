@@ -1,6 +1,0 @@
-{
-  "schema:name": "metric: progress10",
-  "@id": "xdm:progress10",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}

@@ -1,5 +1,0 @@
-{
-  "repo:principal": "authenticated",
-  "repo:privileges": ["read"],
-  "repo:modifier": "grant"
-}

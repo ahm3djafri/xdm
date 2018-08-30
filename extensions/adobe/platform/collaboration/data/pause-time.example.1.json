@@ -1,6 +1,0 @@
-{
-  "schema:name": "metric: pauseTime",
-  "@id": "xdm:pauseTime",
-  "xdm:measurement": "time",
-  "xdm:unit": "second"
-}

@@ -1,6 +1,0 @@
-{
-  "@id": "https://data.adobe.io/entities/segmentIdentity/id123",
-  "xdm:namespace": {
-    "xdm:code": "AA12345"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "schema:name": "metric: errors",
-  "@id": "xdm:errors",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}

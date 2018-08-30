@@ -1,6 +1,0 @@
-{
-  "xdm:transactionID": "transactid-a12345",
-  "xdm:paymentAmount": 333.99,
-  "xdm:paymentType": "credit_card",
-  "xdm:currencyCode": "USD"
-}

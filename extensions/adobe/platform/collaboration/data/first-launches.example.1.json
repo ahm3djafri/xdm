@@ -1,6 +1,0 @@
-{
-  "schema:name": "application metric: firstLaunches",
-  "@id": "xdm:firstLaunches",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}

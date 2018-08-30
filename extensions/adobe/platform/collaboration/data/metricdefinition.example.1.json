@@ -1,6 +1,0 @@
-{
-  "schema:name": "Example Metric",
-  "@id": "https://ns.adobe.com/xdm/data/example-metric",
-  "xdm:measurement": "weight",
-  "xdm:unit": "kg"
-}

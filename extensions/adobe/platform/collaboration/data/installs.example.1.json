@@ -1,6 +1,0 @@
-{
-  "schema:name": "application metric: installs",
-  "@id": "xdm:installs",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}

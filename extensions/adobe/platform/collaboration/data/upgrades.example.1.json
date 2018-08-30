@@ -1,6 +1,0 @@
-{
-  "schema:name": "application metric: upgrades",
-  "@id": "xdm:upgrades",
-  "xdm:measurement": "count",
-  "xdm:unit": null
-}
