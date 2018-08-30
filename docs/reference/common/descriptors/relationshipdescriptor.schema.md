@@ -147,9 +147,9 @@ This changes child.json to:
 ```
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [common/descriptors/relationshipdescriptor.schema.json](common/descriptors/relationshipdescriptor.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/descriptors/relationshipdescriptor.schema.json](common/descriptors/relationshipdescriptor.schema.json) |
 ## Schema Hierarchy
 
 * Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor`
@@ -200,7 +200,7 @@ The unique identifier for the schema descriptor. This property is required when 
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/geo
 
 The geographic related data where an event was observed.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
 ## Schema Hierarchy
 
 * Geo `https://ns.adobe.com/xdm/common/geo`
@@ -72,7 +72,7 @@ The unique identifier of the coordinates.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

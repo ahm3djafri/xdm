@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/conversions
 
 The metric conversions measures a specific set of predefined actions taken by an surfer online. Further context is used to determine the predefined actions.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/conversions.schema.json](data/conversions.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/conversions.schema.json](data/conversions.schema.json) |
 ## Schema Hierarchy
 
 * conversions `https://ns.adobe.com/xdm/data/conversions`
@@ -49,7 +49,7 @@ The unique identifier of this metric.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/drop-before-starts
 
 Indicates the user abandoned the media stream before the first frame (e.g. during the pre-roll ad break, due to an error while loading the content from the CDN).
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
 ## Schema Hierarchy
 
 * Drop before Starts `https://ns.adobe.com/xdm/data/drop-before-starts`
@@ -49,7 +49,7 @@ The unique identifier of this metric.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/object
 
 Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as `[Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity)`, `[IntransitiveActivity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-intransitiveactivity)`, `[Collection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection)` and `[OrderedCollection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-orderedcollection)`.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
 ## Schema Hierarchy
 
 * Object `https://ns.adobe.com/xdm/external/activity-streams-2/object`
@@ -208,7 +208,7 @@ Unknown type `oneOf`.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

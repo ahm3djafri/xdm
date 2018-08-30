@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/unmeasurableiframe
 
 The advertising/viewability metric unmeasurable-iframe describes whether a measurement instrumented ad was not able to be measured due to it being inside one or more iFrames.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/unmeasurableiframe.schema.json](data/unmeasurableiframe.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unmeasurableiframe.schema.json](data/unmeasurableiframe.schema.json) |
 ## Schema Hierarchy
 
 * unmeasurable-iframe `https://ns.adobe.com/xdm/data/unmeasurableiframe`
@@ -49,7 +49,7 @@ The unique identifier of this metric.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
