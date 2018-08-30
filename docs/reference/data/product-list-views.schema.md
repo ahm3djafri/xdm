@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/product-list-views
 
 The commerce metric product-list-views describes how often a product list has been seen by a shopper. The most common use case is to open the shopping cart to inspect its contents.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-views.schema.json](data/product-list-views.schema.json) |
 ## Schema Hierarchy
 

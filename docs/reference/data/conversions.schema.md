@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/conversions
 
 The metric conversions measures a specific set of predefined actions taken by an surfer online. Further context is used to determine the predefined actions.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/conversions.schema.json](data/conversions.schema.json) |
 ## Schema Hierarchy
 

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/clicks
 
 The metric measures the number of interactions a user had by clicking on an asset.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/clicks.schema.json](data/clicks.schema.json) |
 ## Schema Hierarchy
 

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/geounit
 
 The geographical unit of a parent geographical unit.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/geounit.schema.json](common/geounit.schema.json) |
 
 ## Geographical Unit Example

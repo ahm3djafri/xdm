@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/unmeasurableother
 
 The advertising/viewability metric unmeasurable-other describes whether a measurement instrumented ad was not able to be measured due to a non-predefined error.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unmeasurableother.schema.json](data/unmeasurableother.schema.json) |
 ## Schema Hierarchy
 

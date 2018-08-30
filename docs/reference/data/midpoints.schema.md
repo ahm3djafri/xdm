@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/midpoints
 
 The metric midpoints describes when digital video played for at least 50% of the total duration.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/midpoints.schema.json](data/midpoints.schema.json) |
 ## Schema Hierarchy
 

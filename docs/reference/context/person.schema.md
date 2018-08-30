@@ -28,7 +28,7 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDate": "1996-01-03"
+  "xdm:birthDayAndMonth": "01-03"
 }
 ```
 
@@ -40,28 +40,28 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDayAndMonth": "01-03"
+  "xdm:birthDate": "1996-01-03"
 }
 ```
 
 
 # Person Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
-| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastmodifieddate) |
-| [xdm:birthDate](#xdmbirthdate) | `string` | Optional | Person (this schema) |
-| [xdm:birthDay](#xdmbirthday) | `integer` | Optional | Person (this schema) |
-| [xdm:birthDayAndMonth](#xdmbirthdayandmonth) | `string` | Optional | Person (this schema) |
-| [xdm:birthMonth](#xdmbirthmonth) | `integer` | Optional | Person (this schema) |
-| [xdm:birthYear](#xdmbirthyear) | `integer` | Optional | Person (this schema) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:gender](#xdmgender) | `enum` | Optional | Person (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
-| [xdm:name](#xdmname) | Person Name | Optional | Person (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [repo:createDate](#repocreatedate) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#repolastmodifieddate) |
+| [xdm:birthDate](#xdmbirthdate) | `string` | Optional |  | Person (this schema) |
+| [xdm:birthDay](#xdmbirthday) | `integer` | Optional |  | Person (this schema) |
+| [xdm:birthDayAndMonth](#xdmbirthdayandmonth) | `string` | Optional |  | Person (this schema) |
+| [xdm:birthMonth](#xdmbirthmonth) | `integer` | Optional |  | Person (this schema) |
+| [xdm:birthYear](#xdmbirthyear) | `integer` | Optional |  | Person (this schema) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:gender](#xdmgender) | `enum` | Optional | `"not_specified"` | Person (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:name](#xdmname) | Person Name | Optional |  | Person (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:createDate

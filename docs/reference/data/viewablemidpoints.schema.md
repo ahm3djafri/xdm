@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/viewablemidpoints
 
 The advertising/viewability metric viewable-midpoints describes whether at least 50% of the video's pixels were visible at the midpoint of play.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablemidpoints.schema.json](data/viewablemidpoints.schema.json) |
 ## Schema Hierarchy
 

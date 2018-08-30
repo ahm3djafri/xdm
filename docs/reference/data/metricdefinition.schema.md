@@ -13,8 +13,8 @@ For easier identification, metrics have a name and a unique URI that can be used
 Through XDM's extensibility mechanism, new metrics can be defined by extending `Metric Definition`.
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/metricdefinition.schema.json](data/metricdefinition.schema.json) |
 ## Schema Hierarchy
 

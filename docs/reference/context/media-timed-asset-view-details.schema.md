@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/media-timed-asset-view-details
 
 View details for the main content playback, present on all ads and chapters that occur during the content's playback.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-asset-view-details.schema.json](context/media-timed-asset-view-details.schema.json) |
 ## Schema Hierarchy
 

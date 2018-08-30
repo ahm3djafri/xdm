@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/measuredwindowinactive
 
 The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measuredwindowinactive.schema.json](data/measuredwindowinactive.schema.json) |
 ## Schema Hierarchy
 

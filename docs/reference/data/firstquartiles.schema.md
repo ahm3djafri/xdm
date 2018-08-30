@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/firstquartiles
 
 The metric first-quartiles describes a digital video which played for at least 25% of the total duration.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/firstquartiles.schema.json](data/firstquartiles.schema.json) |
 ## Schema Hierarchy
 

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions
 
 The advertising/viewability metric viewability-eligible-impressions describes the number of impressions that were eligible to measure viewability. An impression is eligible if the ad unit has a supported creative format and tag type.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewabilityeligibleimpressions.schema.json](data/viewabilityeligibleimpressions.schema.json) |
 ## Schema Hierarchy
 

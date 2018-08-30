@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/desciptors/schemadescriptor
 
 A descriptor that contains metadata about an XDM schema, including an optional property and array item selector, used to address the descriptor to a specific property or item.
 
-| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
-|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/descriptors/schemadescriptor.schema.json](common/descriptors/schemadescriptor.schema.json) |
 ## Schema Hierarchy
 

@@ -10,8 +10,8 @@ This channel has no specific mechanism and is designed for descriptive purposes 
 Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool
 
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/agency.schema.json](channels/agency.schema.json) |
 ## Schema Hierarchy
 

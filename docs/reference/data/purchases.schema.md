@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/purchases
 
 Number of orders has occurred. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/purchases.schema.json](data/purchases.schema.json) |
 ## Schema Hierarchy
 

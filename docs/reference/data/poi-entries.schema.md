@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries
 
 The place context metric poi-entries describes the number of times a person has left a Point of Interest (POI).
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/poi-entries.schema.json](data/poi-entries.schema.json) |
 ## Schema Hierarchy
 

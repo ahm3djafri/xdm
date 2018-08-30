@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/measuredadnotvisible
 
 The advertising/viewability metric measured-ad-not-visible describes whether < 51% of pixels on an ad where visible at event time.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/measuredadnotvisible.schema.json](data/measuredadnotvisible.schema.json) |
 ## Schema Hierarchy
 

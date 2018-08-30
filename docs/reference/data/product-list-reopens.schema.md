@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/product-list-reopens
 
 Number of reopens for which a product list that was no longer accessible has been re-activated by the user, for example via a re-marketing activity.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-reopens.schema.json](data/product-list-reopens.schema.json) |
 ## Schema Hierarchy
 

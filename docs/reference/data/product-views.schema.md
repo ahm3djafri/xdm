@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/product-views
 
 The commerce metric productViews describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-views.schema.json](data/product-views.schema.json) |
 ## Schema Hierarchy
 

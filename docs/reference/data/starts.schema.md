@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/starts
 
 Indicates the first frame of the timed media was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/starts.schema.json](data/starts.schema.json) |
 ## Schema Hierarchy
 

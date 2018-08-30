@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/cart-abandons
 
 Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.
 
-| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/cart-abandons.schema.json](data/cart-abandons.schema.json) |
 ## Schema Hierarchy
 
