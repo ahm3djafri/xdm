@@ -17,7 +17,7 @@
   "definitions": {
     "collaborator": {
       "properties": {
-        "user": {
+        "collaborator:user": {
           "oneOf": [
             {
               "$ref": "https://ns.adobe.com/adobecloudplatform/ims/user",
@@ -30,23 +30,25 @@
             }
           ]
         },
-        "role": {
-          "title": "Collaborator Role",
-          "$ref": "#/definitions/role"
+        "collaborator:role": {
+          "$ref": "#/definitions/role",
+          "title": "Privileges granted or denied to the collaborator"
         }
       }
     },
     "role": {
-      "type": "string",
-      "enum": ["editor", "viewer"],
-      "meta:enum": {
-        "editor": "An editor has read and write access to the resource",
-        "viewer": "A viewer only has read-only access to the resource"
-      },
-      "description": "The role type of the collaborator"
+      "description": "Privileges granted or denied to the principal",
+      "type": "array",
+      "items": {
+        "$ref": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/privilege"
+      }
+    },
+    "editor": {
+      "$ref": "#/definitions/role",
+      "const": ["ack", "read","write","modify","delete"]
     }
   },
-  "required": ["user", "role"],
+  "required": ["collaborator:user", "collaborator:role"],
   "allOf": [
     {
       "$ref": "#/definitions/collaborator"
