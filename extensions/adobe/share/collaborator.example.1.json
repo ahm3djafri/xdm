@@ -1,8 +1,10 @@
 {
   "collaborator:user": {
-    "xdm:identityProvider": "ims",
-    "id": "C0B648DE57D701277F000101@AdobeID",
-    "type": "https://ns.adobe.com/adobecloudplatform/ims/user"
+    "xdm:primary": true,
+    "xdm:address": "jsmith@xyzinc.com",
+    "xdm:label": "John Smith",
+    "xdm:type": "work",
+    "xdm:status": "active"
   },
   "collaborator:role": "editor"
 }

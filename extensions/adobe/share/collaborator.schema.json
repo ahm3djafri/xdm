@@ -11,7 +11,6 @@
   "type": "object",
   "meta:abstract": false,
   "meta:extensible": true,
-  "additionalProperties": false,
   "meta:extends": ["https://ns.adobe.com/xdm/context/person"],
   "description": "A collaborator on a resource",
   "definitions": {
@@ -32,36 +31,23 @@
         },
         "collaborator:role": {
           "$ref": "#/definitions/role",
-          "title": "Privileges granted or denied to the collaborator"
+          "title": "A role given to a collaborator"
         }
       }
     },
     "role": {
-      "description": "Privileges granted or denied to the principal",
-      "type": "array",
-      "items": {
-        "$ref": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/privilege"
-      }
-    },
-    "editor": {
-      "$ref": "#/definitions/role",
-      "const": ["ack", "read","write","modify","delete"]
+      "description": "Role a collaborator can take",
+      "type": "string",
+      "enum": [
+        "editor",
+        "viewer"
+      ]
     }
   },
   "required": ["collaborator:user", "collaborator:role"],
   "allOf": [
     {
       "$ref": "#/definitions/collaborator"
-    },
-    {
-      "$ref": "#/definitions/role"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/person#/definitions/person"
-    },
-    {
-      "$ref":
-        "https://ns.adobe.com/adobecloudplatform/ims/user#/definitions/user"
     }
   ]
 }
