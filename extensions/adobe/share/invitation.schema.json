@@ -31,13 +31,13 @@
         "collaborator:user": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/adobecloudplatform/ims/user",
-              "title": "IMS User",
-              "description": "The unique identifier of the Collaborator"
+              "$ref": "https://ns.adobe.com/xdm/common/principal",
+              "title": "Principal who should be given ACLs",
+              "description": "The unique identifier of the recipient"
             },
             {
               "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-              "title": "Collaborator Email"
+              "title": "Recipient email"
             }
           ]
         },
