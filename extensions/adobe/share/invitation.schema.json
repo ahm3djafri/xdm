@@ -1,0 +1,95 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/collaboration/invitation",
+  "title": "Invitation",
+  "type": "object",
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "description": "An invitation on a resource",
+  "definitions": {
+    "invitation": {
+      "properties": {
+        "xdm:name": {
+          "title": "Collaborator name",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name",
+          "description": "The collaborator's name"
+        },
+        "repo:id": {
+          "type": "string",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description":
+            "A unique identifier to reference the asset in a content repository.",
+          "examples": ["urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"]
+        },
+        "collaborator:user": {
+          "oneOf": [
+            {
+              "$ref": "https://ns.adobe.com/xdm/common/principal",
+              "title": "Principal who should be given ACLs",
+              "description": "The unique identifier of the recipient"
+            },
+            {
+              "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+              "title": "Recipient email"
+            }
+          ]
+        },
+        "collaborator:role": {
+          "$ref":
+            "https://ns.adobe.com/collaboration/collaborator#/definitions/role",
+          "title": "A role given to a collaborator"
+        },
+        "acceptanceRequired": {
+          "type": "boolean",
+          "meta:usereditable": false
+        },
+        "useMounts": {
+          "type": "boolean",
+          "meta:usereditable": false
+        },
+        "notification": {
+          "type": "object",
+          "description": "Hidden from Invitations API",
+          "properties": {
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "resourceViewUrl": {
+                  "type": "string",
+                  "description":
+                    "The url to view the resource, typically a web url. The maximum length of the value is 300 characters. If specified, it will be sent in the ANS/email notification as the resource's URL. Must be a valid URL. The host of the url must be whitelisted. The corresponding email param is Param_URL_Resource",
+                  "maxLength": 300
+                },
+                "message": {
+                  "type": "string",
+                  "description":
+                    "A custom message for the inviter to add to the invite notification. The maximum length of the value is 300 characters. The following special characters in the message are removed: &, >, <, /, :, \\n, \\r. The corresponding email param is Param_Custom_Message",
+                  "maxLength": 300
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "repo:id",
+    "collaborator:user",
+    "collaborator:role",
+    "acceptanceRequired",
+    "useMounts"
+  ],
+  "allOf": [
+    {
+      "$ref": "#/definitions/invitation"
+    }
+  ]
+}

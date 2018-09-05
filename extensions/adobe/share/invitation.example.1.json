@@ -4,11 +4,13 @@
     "xdm:provider": {
       "@id": "https://ims-na1.adobelogin.com/"
     },
-    "@id": "C0B648DE57D701277F000101@AdobeID",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
     "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "collaborator:role": "viewer",
+  "acceptanceRequired": true,
+  "useMounts": true,
   "xdm:name": {
-    "xdm:fullName": "Roger Federer"
+    "xdm:fullName": "Jane F. Doe"
   }
 }

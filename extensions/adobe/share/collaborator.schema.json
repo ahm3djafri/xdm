@@ -9,57 +9,72 @@
   "$id": "https://ns.adobe.com/collaboration/collaborator",
   "title": "Collaborator",
   "type": "object",
-  "meta:abstract": false,
   "meta:extensible": true,
-  "additionalProperties": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/context/person"],
   "description": "A collaborator on a resource",
   "definitions": {
     "collaborator": {
       "properties": {
-        "user": {
-          "oneOf": [
-            {
-              "$ref": "https://ns.adobe.com/adobecloudplatform/ims/user",
-              "title": "IMS User",
-              "description": "The unique identifier of the Collaborator"
-            },
-            {
-              "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-              "title": "Collaborator Email"
-            }
-          ]
+        "xdm:name": {
+          "title": "Collaborator name",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name",
+          "description": "The collaborator's name"
         },
-        "role": {
-          "title": "Collaborator Role",
-          "$ref": "#/definitions/role"
+        "repo:id": {
+          "type": "string",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description":
+            "A unique identifier to reference the asset in a content repository.",
+          "examples": ["urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"]
+        },
+        "collaborator:user": {
+          "$ref": "https://ns.adobe.com/xdm/common/principal",
+          "title": "Principal who has been given ACLs",
+          "description": "The unique identifier of the Collaborator"
+        },
+        "collaborator:role": {
+          "$ref": "#/definitions/role",
+          "title": "A role given to a collaborator"
         }
       }
     },
     "role": {
+      "description": "Role a collaborator can take",
       "type": "string",
-      "enum": ["editor", "viewer"],
       "meta:enum": {
-        "editor": "An editor has read and write access to the resource",
-        "viewer": "A viewer only has read-only access to the resource"
-      },
-      "description": "The role type of the collaborator"
+        "editor": "A collaborator having read/write/delete privileges",
+        "viewer": "A collaborator having read privileges"
+      }
+    },
+    "editor": {
+      "description": "An editor role defined by a list of ACLs",
+      "allOf": [
+        {
+          "$ref":
+            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/repo:privileges"
+        },
+        {
+          "const": ["ack", "modify", "delete"]
+        }
+      ]
+    },
+    "viewer": {
+      "description": "A viewer role defined by a list of ACLs",
+      "allOf": [
+        {
+          "$ref":
+            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/repo:privileges"
+        },
+        {
+          "const": ["ack", "read"]
+        }
+      ]
     }
   },
-  "required": ["user", "role"],
+  "required": ["repo:id", "collaborator:user", "collaborator:role"],
   "allOf": [
     {
       "$ref": "#/definitions/collaborator"
-    },
-    {
-      "$ref": "#/definitions/role"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/person#/definitions/person"
-    },
-    {
-      "$ref":
-        "https://ns.adobe.com/adobecloudplatform/ims/user#/definitions/user"
     }
   ]
 }
