@@ -1,7 +1,0 @@
-{
-    "collaborator:user": {
-        "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-        "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
-    }, 
-    "collaborator:role": "viewer"
-}

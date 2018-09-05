@@ -11,23 +11,27 @@
   "type": "object",
   "meta:abstract": false,
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/context/person"],
   "description": "A collaborator on a resource",
   "definitions": {
     "collaborator": {
       "properties": {
+        "xdm:name": {
+          "title": "Collaborator name",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name",
+          "description": "The collaborator's name"
+        },
+        "repo:id": {
+          "type": "string",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description":
+            "A unique identifier to reference the asset in a content repository.",
+          "examples": ["urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"]
+        },
         "collaborator:user": {
-          "oneOf": [
-            {
-              "$ref": "https://ns.adobe.com/adobecloudplatform/ims/user",
-              "title": "IMS User",
-              "description": "The unique identifier of the Collaborator"
-            },
-            {
-              "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-              "title": "Collaborator Email"
-            }
-          ]
+          "$ref": "https://ns.adobe.com/adobecloudplatform/ims/user",
+          "title": "IMS User",
+          "description": "The unique identifier of the Collaborator"
         },
         "collaborator:role": {
           "$ref": "#/definitions/role",
@@ -38,13 +42,37 @@
     "role": {
       "description": "Role a collaborator can take",
       "type": "string",
-      "enum": [
-        "editor",
-        "viewer"
+      "meta:enum": {
+        "editor": "A collaborator having read/write/delete privileges",
+        "viewer": "A collaborator having read privileges"
+      }
+    },
+    "editor": {
+      "description": "An editor role defined by a list of ACLs",
+      "allOf": [
+        {
+          "$ref":
+            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/repo:privileges"
+        },
+        {
+          "const": ["ack", "modify", "delete"]
+        }
+      ]
+    },
+    "viewer": {
+      "description": "A viewer role defined by a list of ACLs",
+      "allOf": [
+        {
+          "$ref":
+            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/repo:privileges"
+        },
+        {
+          "const": ["ack", "read"]
+        }
       ]
     }
   },
-  "required": ["collaborator:user", "collaborator:role"],
+  "required": ["repo:id", "collaborator:user", "collaborator:role"],
   "allOf": [
     {
       "$ref": "#/definitions/collaborator"
