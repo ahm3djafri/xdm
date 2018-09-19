@@ -1,0 +1,16 @@
+{
+  "repo:id": "urn:aaid:sc:US:86633ca9-1c6b-4e03-bfa1-3f7c79a6d8f3",
+  "collaborator:user": {
+    "xdm:provider": {
+      "@id": "https://ims-na1.adobelogin.com/"
+    },
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
+  },
+  "collaborator:role": "viewer",
+  "acceptanceRequired": true,
+  "useMounts": true,
+  "xdm:name": {
+    "xdm:fullName": "Jane F. Doe"
+  }
+}

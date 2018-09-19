@@ -1,0 +1,16 @@
+{
+  "repo:id": "urn:aaid:sc:US:86633ca9-1c6b-4e03-bfa1-3f7c79a6d8f3",
+  "collaborator:user": {
+    "xdm:address": "jsmith@xyzinc.com"
+  },
+  "collaborator:role": "editor",
+  "acceptanceRequired": true,
+  "useMounts": true,
+  "notification": {
+    "parameters": {
+      "resourceViewUrl":
+        "https://xd.adobe.com/view/61c087fd-9252-4f25-8af5-e6c4cdcb6ac9-3493",
+      "message": "Hey - Check out this design!"
+    }
+  }
+}
