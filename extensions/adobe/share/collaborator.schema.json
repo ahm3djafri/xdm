@@ -40,10 +40,27 @@
     },
     "role": {
       "description": "Role a collaborator can take",
-      "type": "string",
-      "meta:enum": {
-        "editor": "A collaborator having read/write/delete privileges",
-        "viewer": "A collaborator having read privileges"
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string",
+            "meta:enum": {
+              "editor": "A collaborator having read/write/delete privileges",
+              "viewer": "A collaborator having read privileges"
+            }
+          },
+          {
+            "$ref":
+              "#/definitions/privileges"
+          }
+        ]
+      }
+    },
+    "privileges": {
+      "type": "array",
+      "items": {
+        "$ref": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/privilege"
       }
     },
     "editor": {
@@ -51,7 +68,7 @@
       "allOf": [
         {
           "$ref":
-            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/repo:privileges"
+            "#/definitions/privileges"
         },
         {
           "const": ["ack", "modify", "delete"]
