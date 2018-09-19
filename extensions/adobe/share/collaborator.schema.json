@@ -52,7 +52,7 @@
           },
           {
             "$ref":
-              "#/definitions/privileges"
+              "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/privilege"
           }
         ]
       }
